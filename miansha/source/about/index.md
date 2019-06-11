@@ -20,6 +20,7 @@ You got a dream, you gotta protect it. People can't do something themselves,they
     data-server="netease"
     data-type="playlist"
     data-mutex="true"
+    data-autoplay="true"
     data-fixed="false"
     data-theme="#0073aa"
     data-volume="0.2">
