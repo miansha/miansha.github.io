@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[面向对象那些事]]></title>
+    <url>%2F2019%2F06%2F11%2F%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%82%A3%E4%BA%9B%E4%BA%8B%2F</url>
+    <content type="text"><![CDATA[面向对象呀，不就是继承，封装，多态。 因为一个类可以实现多个接口，但只能继承一个类，声明为接口更灵活一些，也使实现类具有更好的扩展性。]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>面向对象</tag>
+      </tags>
+  </entry>
+</search>
