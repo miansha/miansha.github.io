@@ -2,7 +2,6 @@
 date: 2019-06-11 15:45:08
 type: "about"
 ---
-
 <blockquote class="blockquote-center">
 
 You got a dream, you gotta protect it. People can't do something themselves,they wanna tell you you can't do it.If you want something, go get it. Period.
@@ -10,8 +9,6 @@ You got a dream, you gotta protect it. People can't do something themselves,they
 </blockquote>
 
 --------
-
-<br>
 
 <link rel="stylesheet" href="/dist/APlayer.min.css">
 <script src="/dist/APlayer.min.js"></script>
@@ -26,7 +23,7 @@ You got a dream, you gotta protect it. People can't do something themselves,they
     data-volume="0.2">
 </div>
 <script src="/dist/Meting.min.js"></script>
-
+<br><br>
 
 
 
