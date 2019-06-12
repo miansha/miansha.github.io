@@ -221,7 +221,6 @@ links_title: 友情链接
 links_layout: inline
 links:
   GitHub: https://github.com/miansha
-  Java客栈: http://javakz.com
 # Sidebar Avatar
 avatar:
   # In theme directory (source/images): /images/avatar.gif
@@ -276,7 +275,7 @@ back2top:
   # Back to top in sidebar.
   sidebar: false
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
 # A button to open designated chat widget in sidebar.
 # Firstly, you need enable the chat service you want to activate its sidebar button.
@@ -483,7 +482,7 @@ font:
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family: PT Mono
+    family: DejaVu Sans Mono
     size:
 
 
