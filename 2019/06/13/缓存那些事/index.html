@@ -147,17 +147,20 @@
 
 
 
-  <meta name="description" content="水之积也不厚，则其负大舟也无力。">
-<meta name="keywords" content="面试宝典,Java面试宝典,面试,分布式,Java基础,集群,微服务">
-<meta property="og:type" content="website">
-<meta property="og:title" content="面杀">
-<meta property="og:url" content="https://miansha.github.io/archives/2019/index.html">
+  <meta name="description" content="什么是缓存雪崩？缓存雪崩我们可以简单的理解为：由于原有缓存失效，新缓存未到期间所有原本应该访问缓存的请求都去查询数据库了，而对数据库 CPU 和内存造成巨大压力，严重的会造成数据库宕机。从而形成一系列连锁反应，造成整个系统崩溃。一般有三种处理办法：  一般并发量不是特别多的时候，使用最多的解决方案是加锁排队。">
+<meta name="keywords" content="redis,cache">
+<meta property="og:type" content="article">
+<meta property="og:title" content="缓存那些事">
+<meta property="og:url" content="https://miansha.github.io/2019/06/13/缓存那些事/index.html">
 <meta property="og:site_name" content="面杀">
-<meta property="og:description" content="水之积也不厚，则其负大舟也无力。">
+<meta property="og:description" content="什么是缓存雪崩？缓存雪崩我们可以简单的理解为：由于原有缓存失效，新缓存未到期间所有原本应该访问缓存的请求都去查询数据库了，而对数据库 CPU 和内存造成巨大压力，严重的会造成数据库宕机。从而形成一系列连锁反应，造成整个系统崩溃。一般有三种处理办法：  一般并发量不是特别多的时候，使用最多的解决方案是加锁排队。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://miansha.github.io/images/Come%20on/Come%20on1.gif">
+<meta property="og:updated_time" content="2019-06-13T04:08:02.807Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="面杀">
-<meta name="twitter:description" content="水之积也不厚，则其负大舟也无力。">
+<meta name="twitter:title" content="缓存那些事">
+<meta name="twitter:description" content="什么是缓存雪崩？缓存雪崩我们可以简单的理解为：由于原有缓存失效，新缓存未到期间所有原本应该访问缓存的请求都去查询数据库了，而对数据库 CPU 和内存造成巨大压力，严重的会造成数据库宕机。从而形成一系列连锁反应，造成整个系统崩溃。一般有三种处理办法：  一般并发量不是特别多的时候，使用最多的解决方案是加锁排队。">
+<meta name="twitter:image" content="https://miansha.github.io/images/Come%20on/Come%20on1.gif">
 
 
 
@@ -165,7 +168,7 @@
 
   
   
-  <link rel="canonical" href="https://miansha.github.io/archives/2019/">
+  <link rel="canonical" href="https://miansha.github.io/2019/06/13/缓存那些事/">
 
 
 
@@ -175,7 +178,7 @@
   };
 </script>
 
-  <title>归档 | 面杀</title>
+  <title>缓存那些事 | 面杀</title>
   
 
 
@@ -223,7 +226,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -333,7 +336,7 @@
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
 
     
     
@@ -362,28 +365,6 @@
 
   
     
-
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
 
   
 
@@ -430,113 +411,268 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
 
-      
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 2 篇日志。 继续努力。
-      </span>
-      
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
-
-        
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://miansha.github.io/2019/06/13/缓存那些事/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="杀气腾腾">
+      <meta itemprop="description" content="水之积也不厚，则其负大舟也无力。">
+      <meta itemprop="image" content="/images/happy.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="面杀">
+    </span>
+
+    
+      <header class="post-header">
+
         
-          <a class="post-title-link" href="/2019/06/13/缓存那些事/" itemprop="url">
-            
-              <span itemprop="name">缓存那些事</span>
-            
-          </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">缓存那些事
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-06-13T09:09:00+08:00" content="2019-06-13">
-          06-13
-        </time>
-      </div>
+              
+            
+          </h1>
+        
 
-    </header>
-  </article>
+        <div class="post-meta">
+          <span class="post-time">
 
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-06-13 09:09:00 / 修改时间：12:08:02" itemprop="dateCreated datePublished" datetime="2019-06-13T09:09:00+08:00">2019-06-13</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/分布式/" itemprop="url" rel="index"><span itemprop="name">分布式</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/06/11/Java基础那些事/" itemprop="url">
-            
-              <span itemprop="name">Java基础那些事</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-06-11T14:53:39+08:00" content="2019-06-11">
-          06-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
+      
+        <h2 id="什么是缓存雪崩？"><a href="#什么是缓存雪崩？" class="headerlink" title="什么是缓存雪崩？"></a>什么是缓存雪崩？</h2><p>缓存雪崩我们可以简单的理解为：由于原有缓存失效，新缓存未到期间所有原本应该访问缓存的请求都去查询数据库了，而对数据库 CPU 和内存造成巨大压力，严重的会造成数据库宕机。从而形成一系列连锁反应，造成整个系统崩溃。一般有三种处理办法：</p>
+<ul>
+<li>一般并发量不是特别多的时候，使用最多的解决方案是加锁排队。<a id="more"></a></li>
+<li>给每一个缓存数据增加相应的缓存标记，记录缓存的是否失效，如果缓存标记失效，则更新数据缓存。</li>
+<li>为 key 设置不同的缓存失效时间。</li>
+</ul>
+<h2 id="什么是缓存穿透"><a href="#什么是缓存穿透" class="headerlink" title="什么是缓存穿透?"></a>什么是缓存穿透?</h2><p>缓存穿透是指用户查询数据，在数据库没有，自然在缓存中也不会有。这样就导致用户查询的时候，在缓存中找不到，每次都要去数据库再查询一遍，然后返回空（相当于进行了两次无用的查询）。这样请求就绕过缓存直接查数据库，这也是经常提的缓存命中率问题。<br>有很多种方法可以有效地解决缓存穿透问题，最常见的则是采用<span style="color: #ff6600;">布隆过滤器</span>，将所有可能存在的数据哈希到一个足够大的 bitmap 中，一个一定不存在的数据会被这个 bitmap 拦截掉，从而避免了对底层存储系统的查询压力。另外也有一个更为简单粗暴的方法，<span style="color: #ff6600;">如果一个查询返回的数据为空（不管是数据不存在，还是系统故障），我们仍然把这个空结果进行缓存，但它的过期时间会很短，最长不超过五分钟。通过这个直接设置的默认值存放到缓存，这样第二次到缓冲中获取就有值了，</span>而不会继续访问数据库。</p>
+<h2 id="什么是缓存预热"><a href="#什么是缓存预热" class="headerlink" title="什么是缓存预热?"></a>什么是缓存预热?</h2><p>缓存预热就是系统上线后，将相关的缓存数据直接加载到缓存系统。这样就可以避免在用户请求的时候，先查询数据库，然后再将数据缓存的问题！用户直接查询事先被预热的缓存数据！</p>
+<h2 id="什么是缓存更新"><a href="#什么是缓存更新" class="headerlink" title="什么是缓存更新?"></a>什么是缓存更新?</h2><p>缓存更新除了缓存服务器自带的缓存失效策略之外（Redis 默认的有 6 中策略可供选择），我们还可以根据具体的业务需求进行自定义的缓存淘汰，常见的策略有两种：</p>
+<ol>
+<li>定时去清理过期的缓存；</li>
+<li>当有用户请求过来时，再判断这个请求所用到的缓存是否过期，过期的话就去底层系统得到新数据并更新缓存。</li>
+</ol>
+<h2 id="什么是缓存降级"><a href="#什么是缓存降级" class="headerlink" title="什么是缓存降级?"></a>什么是缓存降级?</h2><p>当访问量剧增、服务出现问题（如响应时间慢或不响应）或非核心服务影响到核心流程的性能时，仍然需要保证服务还是可用的，即使是有损服务。系统可以根据一些关键数据进行自动降级，也可以配置开关实现人工降级。降级的最终目的是保证核心服务可用，即使是有损的。而且有些服务是无法降级的（如加入购物车、结算）。</p>
+<p><span style="color:#f44336">持续更新中…</span><br><img src="/images/Come on/Come on1.gif"></p>
+
+      
     </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div>🐼 您的支持将鼓励我继续创作 🐼</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/weixin.jpg" alt="杀气腾腾 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.jpg" alt="杀气腾腾 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>杀气腾腾</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="https://miansha.github.io/2019/06/13/缓存那些事/" title="缓存那些事">https://miansha.github.io/2019/06/13/缓存那些事/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/redis/" rel="tag"><i class="fa fa-tag"></i> redis</a>
+          
+            <a href="/tags/cache/" rel="tag"><i class="fa fa-tag"></i> cache</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/11/Java基础那些事/" rel="next" title="Java基础那些事">
+                <i class="fa fa-chevron-left"></i> Java基础那些事
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -556,8 +692,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -676,6 +821,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是缓存雪崩？"><span class="nav-number">1.</span> <span class="nav-text">什么是缓存雪崩？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是缓存穿透"><span class="nav-number">2.</span> <span class="nav-text">什么是缓存穿透?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是缓存预热"><span class="nav-number">3.</span> <span class="nav-text">什么是缓存预热?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是缓存更新"><span class="nav-number">4.</span> <span class="nav-text">什么是缓存更新?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是缓存降级"><span class="nav-number">5.</span> <span class="nav-text">什么是缓存降级?</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -807,6 +969,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
+
+
 
   
 
@@ -824,6 +990,8 @@
 
   
 
+
+  
 
 
   
