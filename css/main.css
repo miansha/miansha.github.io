@@ -1745,7 +1745,7 @@ pre .javascript .function {
 }
 .post-body {
   font-family: Microsoft Yahei, "微软雅黑", "Helvetica Neue", Helvetica, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
-  color: #444;
+  color: #333;
   font-size: 14px;
 }
 .post-body p {
@@ -1969,7 +1969,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #47b585;
+  background: #b3ffa4;
 }
 .feed-link,
 .chat {
