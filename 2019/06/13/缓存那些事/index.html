@@ -147,19 +147,19 @@
 
 
 
-  <meta name="description" content="什么是缓存雪崩？缓存雪崩我们可以简单的理解为：由于原有缓存失效，新缓存未到期间所有原本应该访问缓存的请求都去查询数据库了，而对数据库 CPU 和内存造成巨大压力，严重的会造成数据库宕机。从而形成一系列连锁反应，造成整个系统崩溃。一般有三种处理办法：  一般并发量不是特别多的时候，使用最多的解决方案是加锁排队。">
+  <meta name="description" content="什么是缓存雪崩？缓存雪崩我们可以简单的理解为：由于原有缓存失效，新缓存未到期间所有原本应该访问缓存的请求都去查询数据库了，而对数据库 CPU 和内存造成巨大压力，严重的会造成数据库宕机。从而形成一系列连锁反应，造成整个系统崩溃。一般有三种处理办法：">
 <meta name="keywords" content="redis,cache">
 <meta property="og:type" content="article">
 <meta property="og:title" content="缓存那些事">
 <meta property="og:url" content="https://miansha.github.io/2019/06/13/缓存那些事/index.html">
 <meta property="og:site_name" content="面杀">
-<meta property="og:description" content="什么是缓存雪崩？缓存雪崩我们可以简单的理解为：由于原有缓存失效，新缓存未到期间所有原本应该访问缓存的请求都去查询数据库了，而对数据库 CPU 和内存造成巨大压力，严重的会造成数据库宕机。从而形成一系列连锁反应，造成整个系统崩溃。一般有三种处理办法：  一般并发量不是特别多的时候，使用最多的解决方案是加锁排队。">
+<meta property="og:description" content="什么是缓存雪崩？缓存雪崩我们可以简单的理解为：由于原有缓存失效，新缓存未到期间所有原本应该访问缓存的请求都去查询数据库了，而对数据库 CPU 和内存造成巨大压力，严重的会造成数据库宕机。从而形成一系列连锁反应，造成整个系统崩溃。一般有三种处理办法：">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://miansha.github.io/images/Come%20on/Come%20on1.gif">
-<meta property="og:updated_time" content="2019-06-13T04:08:02.807Z">
+<meta property="og:updated_time" content="2019-06-13T04:56:25.582Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="缓存那些事">
-<meta name="twitter:description" content="什么是缓存雪崩？缓存雪崩我们可以简单的理解为：由于原有缓存失效，新缓存未到期间所有原本应该访问缓存的请求都去查询数据库了，而对数据库 CPU 和内存造成巨大压力，严重的会造成数据库宕机。从而形成一系列连锁反应，造成整个系统崩溃。一般有三种处理办法：  一般并发量不是特别多的时候，使用最多的解决方案是加锁排队。">
+<meta name="twitter:description" content="什么是缓存雪崩？缓存雪崩我们可以简单的理解为：由于原有缓存失效，新缓存未到期间所有原本应该访问缓存的请求都去查询数据库了，而对数据库 CPU 和内存造成巨大压力，严重的会造成数据库宕机。从而形成一系列连锁反应，造成整个系统崩溃。一般有三种处理办法：">
 <meta name="twitter:image" content="https://miansha.github.io/images/Come%20on/Come%20on1.gif">
 
 
@@ -470,7 +470,7 @@
                 
               
 
-              <time title="创建时间：2019-06-13 09:09:00 / 修改时间：12:08:02" itemprop="dateCreated datePublished" datetime="2019-06-13T09:09:00+08:00">2019-06-13</time>
+              <time title="创建时间：2019-06-13 09:09:00 / 修改时间：12:56:25" itemprop="dateCreated datePublished" datetime="2019-06-13T09:09:00+08:00">2019-06-13</time>
             
 
             
@@ -528,8 +528,9 @@
 
       
         <h2 id="什么是缓存雪崩？"><a href="#什么是缓存雪崩？" class="headerlink" title="什么是缓存雪崩？"></a>什么是缓存雪崩？</h2><p>缓存雪崩我们可以简单的理解为：由于原有缓存失效，新缓存未到期间所有原本应该访问缓存的请求都去查询数据库了，而对数据库 CPU 和内存造成巨大压力，严重的会造成数据库宕机。从而形成一系列连锁反应，造成整个系统崩溃。一般有三种处理办法：</p>
+<a id="more"></a>
 <ul>
-<li>一般并发量不是特别多的时候，使用最多的解决方案是加锁排队。<a id="more"></a></li>
+<li>一般并发量不是特别多的时候，使用最多的解决方案是加锁排队。</li>
 <li>给每一个缓存数据增加相应的缓存标记，记录缓存的是否失效，如果缓存标记失效，则更新数据缓存。</li>
 <li>为 key 设置不同的缓存失效时间。</li>
 </ul>
