@@ -1861,7 +1861,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d4ff16;
+  background: #c970ff;
 }
 .feed-link,
 .chat {
@@ -2466,9 +2466,6 @@ ul.breadcrumb li+li:last-child {
 .post-body h1,
 .post-body h2 {
   font-size: 16px;
-}
-.post-body blockquote {
-  border-left: 4px solid #f44336;
 }
 .post-body {
   font-family: Microsoft Yahei, "微软雅黑", "Helvetica Neue", Helvetica, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
